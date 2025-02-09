@@ -378,7 +378,7 @@ if __name__ == "__main__":
 	Parser.add_argument('-q', '--quiet', action='store_true', help="Quiet mode will only log issues found")
 	Parser.add_argument('-t', '--timeout', default=5.0, help="Socket timeout value Default: 5")
 	Parser.add_argument('--no-color', action='store_true', help="Suppress color codes")
-	Parser.add_argument('-c', '--configfile', default="default.py", help="Filepath to the configuration file of payloads")
+	Parser.add_argument('-c', '--configfile', default="exhaustive.py", help="Filepath to the configuration file of payloads")
 	Args = Parser.parse_args()  # returns data from the options specified (echo)
 
 	NOCOLOR = Args.no_color
